@@ -19,68 +19,47 @@
         obcaecati ipsum cupiditate eveniet ducimus iusto est!
       </p>
       <div class="btn-place">
-        <!--¿es mejor un button o un elemento 'a' con borde, cuál es su diferencia en cuanto a funcionalidad?-->
         <button class="btn-type"><a href="#sign-in">Iniciar sesión</a></button>
         <button class="btn-type"> <a href="#sign-up">Registrate aquí</a></button>
       </div>
     </header>
   </div>
 
-  <!--Formulario para iniciar sesión-->
-  <div class="container main-content background-2" id="sign-in">
-    <section>
-      <main>
-        <h3>Inicio de sesión</h3>
-        <form action="" method="post">
-          <label for="userSignIn">Nombre usuaria</label>
-          <!--¿está bien si name y id tienen el mismo valor o deben ser distintos?-->
-          <input type="text" name="user" id="userSignIn">
-          <!--¿label e input deberían ir dentro de un div?-->
-          <label for="passwordSignIn">Contraseña</label>
-          <input type="password" name="password" id="passwordSignIn">
-          <button class="btn-type" type="submit" id="btnSignIn"><a href="#msn-cipher">Entrar</a>
-            </button>
-        </form>
-      </main>
-    </section>
-  </div>
-
   <!--Formulario para ingresar texto para cifrar y descifrar-->
   <div class="container main-content background-1" id="msn-cipher">
     <h3>Servicio de mensaje cifrado</h3>
     <form action="" method="post">
-      <label for="users"></label>
-      <select name="" id="users">
-        <option value="placeholder">Elige una amiga</option>
-        <option value="user1">María Carrasco</option>
-        <option value="user2">Lorena Hernández</option>
-        <option value="user3">Francisca Salas</option>
-        <option value="user4">Camila López</option>
-      </select>
-      <label for="msn-input">Escribe el mensaje que quieres cifrar</label>
-      <textarea name="" id="msn-input" cols="30" rows="10"></textarea>
-      <label for="num-cipher">Elige el desplazamiento de cifrado</label>
-      <input type="number" name="num-cipher" id="num-cipher">
+
+      <div>
+        <label for="users"></label>
+        <select name="" id="users">
+          <option value="placeholder">Elige una amiga</option>
+          <option value="user1">María Carrasco</option>
+          <option value="user2">Lorena Hernández</option>
+          <option value="user3">Francisca Salas</option>
+          <option value="user4">Camila López</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="num-cipher">Elige el desplazamiento de cifrado</label>
+        <input type="number" name="num-cipher" id="num-cipher">
+      </div>
+
+      <div>
+        <label for="msn-input">Escribe el mensaje que quieres cifrar</label>
+        <textarea name="" id="msn-input" cols="30" rows="10"></textarea>
+      </div>
+
       <div class="btn-place">
         <button type="submit" class="btn-type" id="btnEncode">Cifrar el mensaje</button>
         <button type="submit" class="btn-type" id="btnDecode">Descifrar el mensaje</button>
       </div>
-      <label for="msn-output">Tu mensaje es:</label>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-    </form>
-  </div>
 
-  <!--Formulario para el registro de usuaria-->
-  <div class="container main-content background-2" id="sign-up">
-    <h3>Registro de usuaria</h3>
-    <form action="" method="post">
-      <label for="userSignUp">Ingresa tu nombre y apellido</label>
-      <input type="text" name="user" id="userSignUp">
-      <label for="passwordSignUp">Ingresa una contraseña</label>
-      <input type="password" name="password" id="passwordSignUp">
-      <label for="emailSignUp">Ingresa tu correo electrónico</label>
-      <input type="email" name="email" id="emailSignUp">
-      <button type="submit" class="btn-type"><a href="#sign-in">Registrarme</a></button>
+      <div>
+        <label for="msn-output">Tu mensaje es:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
     </form>
   </div>
 
