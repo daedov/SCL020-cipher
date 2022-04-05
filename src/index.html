@@ -11,9 +11,7 @@
 
   <!--Encabezado de la página-->
   <div class="container background-1">
-    <!--¿está bien que el header vaya dentro de un div o el header cumple están función por sí sola?-->
     <header class="main-content">
-      <!--¿habría que poner cada elemento dentro de un div para manejarlo mejor?-->
       <h1>safer</h1>
       <img src="/images/chat2.png" alt="" id="img-header">
       <h2>Lorem ipsum dolor sit amet.</h2>
@@ -31,7 +29,6 @@
   <!--Formulario para iniciar sesión-->
   <div class="container main-content background-2" id="sign-in">
     <section>
-      <!--¿existe una jerarquía en el html semántico?-->
       <main>
         <h3>Inicio de sesión</h3>
         <form action="" method="post">
@@ -49,7 +46,6 @@
   </div>
 
   <!--Formulario para ingresar texto para cifrar y descifrar-->
-  <!--¿también debe ser un formulario?-->
   <div class="container main-content background-1" id="msn-cipher">
     <h3>Servicio de mensaje cifrado</h3>
     <form action="" method="post">
@@ -61,14 +57,13 @@
         <option value="user3">Francisca Salas</option>
         <option value="user4">Camila López</option>
       </select>
-      <!--¿es necesario el label cuando se usa textarea o podría ser un elemento p o h?-->
       <label for="msn-input">Escribe el mensaje que quieres cifrar</label>
       <textarea name="" id="msn-input" cols="30" rows="10"></textarea>
       <label for="num-cipher">Elige el desplazamiento de cifrado</label>
       <input type="number" name="num-cipher" id="num-cipher">
       <div class="btn-place">
-        <button type="submit" class="btn-type">Cifrar el mensaje</button>
-        <button type="submit" class="btn-type">Descifrar el mensaje</button>
+        <button type="submit" class="btn-type" id="btnEncode">Cifrar el mensaje</button>
+        <button type="submit" class="btn-type" id="btnDecode">Descifrar el mensaje</button>
       </div>
       <label for="msn-output">Tu mensaje es:</label>
       <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -89,7 +84,7 @@
     </form>
   </div>
 
-  <!--Pie de la página con los links a redes sociales-->
+  <!--Pie de página con los links a redes sociales-->
   <div class="container background-1">
     <footer>
       <img src="" alt="">
