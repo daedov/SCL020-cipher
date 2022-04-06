@@ -8,66 +8,71 @@
 </head>
 
 <body>
-  <!--Imagen de fondo-->
-  <div class="demo_wrap">
-    <h1>safer</h1>
-    <h2>Lorem ipsum dolor sit amet.</h2>
-    <p id="txt-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae molestias, non nam
-      obcaecati ipsum cupiditate eveniet ducimus iusto est!
-    </p>
-    <img src="/images/90539.jpg">
-  </div>
-
   <!--Encabezado de la página-->
-  <div class="container">
-    <header class="main-content">
-      <img src="/images/chat2.png" alt="" id="img-header">
-    </header>
-  </div>
+  <header>
+    <div class="wrap">
+      <h1>safer</h1>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p id="txt-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae molestias, non nam
+        obcaecati ipsum cupiditate eveniet ducimus iusto est!
+      </p>
+      <img src="/images/90539.jpg">
+    </div>
+  </header>
 
   <!--Caja de ingreso de texto para cifrar y descifrar-->
-  <main class="container main-content">
-    <h3>Servicio de mensajería cifrada</h3>
+  <main class="main-content">
+    <!--<aside class="content-grid">
+      <img src="/images/chat2.png" alt="" id="img-header">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore a iusto id enim cum dolorem itaque!
+        Illum praesentium, facere dolorum sed, provident ullam odio reprehenderit cupiditate culpa, aut accusantium!</p>
+    </aside>-->
 
-    <div>
-      <!--se podría cambiar por el teléfono o correo?-->
-      <h4>Elige una amiga:</h4>
-      <select name="" id="users">
-        <option value="user1">María Carrasco</option>
-        <option value="user2">Lorena Hernández</option>
-        <option value="user3">Francisca Salas</option>
-        <option value="user4">Camila López</option>
-      </select>
-    </div>
+    <section class="content-grid">
+      <h3>Servicio de mensajería cifrada</h3>
 
-    <div>
-      <h4>Elige el desplazamiento de cifrado:</h4>
-      <input type="number" name="num-cipher" id="num-cipher">
-    </div>
+      <div>
+        <!--se podría cambiar por el teléfono o correo?-->
+        <h4>Elige una amiga:</h4>
+        <select name="" id="users">
+          <option value="user1">María Carrasco</option>
+          <option value="user2">Lorena Hernández</option>
+          <option value="user3">Francisca Salas</option>
+          <option value="user4">Camila López</option>
+        </select>
+      </div>
 
-    <div>
-      <h4>Escribe tu mensaje:</h4>
-      <textarea name="" id="msn-input" cols="30" rows="10"></textarea>
-    </div>
+      <div>
+        <h4>Elige el desplazamiento de cifrado:</h4>
+        <input type="number" id="num-cipher">
+      </div>
 
-    <div class="btn-place">
-      <button class="btn-type" id="btnEncode">Cifrar el mensaje</button>
-      <button class="btn-type" id="btnDecode">Descifrar el mensaje</button>
-    </div>
+      <div>
+        <h4>Escribe tu mensaje:</h4>
+        <textarea id="msn-input" cols="30" rows="10"></textarea>
+      </div>
 
-    <div>
-      <h4>Tu mensaje es:</h4>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-    </div>
-    <div>
-      <button class="btn-type" id="btnClear" onclick="clear()">Limpiar el mensaje</button>
-      <button class="btn-type" id="btnLink">Enviar el mensaje</button>
-    </div>
+      <div class="btn-place">
+        <button class="btn-type" id="btnEncode">Cifrar el mensaje</button>
+        <button class="btn-type" id="btnDecode">Descifrar el mensaje</button>
+      </div>
+
+      <div>
+        <h4>Tu mensaje es:</h4>
+        <textarea id="msn-output" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <button class="btn-type" id="btnClear" onclick="clear()">Limpiar el mensaje</button>
+        <button class="btn-type" id="btnLink">Enviar el mensaje</button>
+      </div>
+
+    </section>
   </main>
 
   <!--Pie de página con los links a redes sociales-->
-  <div class="container background-1">
-    <footer>
+  <footer>
+    <div class="wrap">
       <img src="" alt="">
       <a href="http://">facebook</a>
 
@@ -76,8 +81,9 @@
 
       <img src="" alt="">
       <a href="http://">twitter</a>
-    </footer>
-  </div>
+    </div>
+  </footer>
+
   <script src="index.js" type="module"></script>
 </body>
 

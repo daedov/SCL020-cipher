@@ -8,21 +8,15 @@ Notas:
 
 body {
     font-family: 'Roboto', sans-serif;
-    /*background-image: url("/images/90539.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.6;*/
-
 }
 
-.demo_wrap {
+.wrap {
     position: relative;
     overflow: hidden;
     padding: 16px;
     border: 1px dashed rgb(223, 142, 21);
 }
-.demo_wrap h1 {
+.wrap h1 {
     padding: 100px;
     position: relative;
     z-index: 2;
@@ -30,7 +24,7 @@ body {
     font-weight: 700;
     font-size: 5em;
 }
-.demo_wrap img {
+.wrap img {
     position: absolute;
     left: 0;
     top: 0;
@@ -39,18 +33,25 @@ body {
     opacity: 0.6;
 }
 
-.container {
-    width: 800px;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: center;
+content-grid  {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 100px; 
+    grid-template-rows: 100px 100px;
+    align-content: center;
+    top: 0px;
+    height: 100%;
 }
 
 .main-content {
     padding: 2em 0;
+    width: 800px;
+    max-width: 50%;
+    margin: 0 auto;
+    /*display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;*/
 }
 
 h2 {
@@ -125,17 +126,17 @@ h4, input, select, textarea {
     }
 }*/
 
-footer {
+footer .wrap {
+    text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 2em;
     padding: 2em;
+    background-color: rgb(255, 235, 205);
 }
 
 a {
     text-decoration: none;
     display: inline-flex;
-    
 }
 
 /*background-color: rgb(255, 228, 196);*/
