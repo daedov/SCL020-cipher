@@ -8,60 +8,62 @@
 </head>
 
 <body>
+  <!--Imagen de fondo-->
+  <div class="demo_wrap">
+    <h1>safer</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p id="txt-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae molestias, non nam
+      obcaecati ipsum cupiditate eveniet ducimus iusto est!
+    </p>
+    <img src="/images/90539.jpg">
+  </div>
 
   <!--Encabezado de la página-->
-  <div class="container background-1">
+  <div class="container">
     <header class="main-content">
-      <h1>safer</h1>
       <img src="/images/chat2.png" alt="" id="img-header">
-      <h2>Lorem ipsum dolor sit amet.</h2>
-      <p id="txt-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae molestias, non nam
-        obcaecati ipsum cupiditate eveniet ducimus iusto est!
-      </p>
-      <div class="btn-place">
-        <button class="btn-type"><a href="#sign-in">Iniciar sesión</a></button>
-        <button class="btn-type"> <a href="#sign-up">Registrate aquí</a></button>
-      </div>
     </header>
   </div>
 
-  <!--Formulario para ingresar texto para cifrar y descifrar-->
-  <div class="container main-content background-1" id="msn-cipher">
-    <h3>Servicio de mensaje cifrado</h3>
-    <form action="" method="post">
+  <!--Caja de ingreso de texto para cifrar y descifrar-->
+  <main class="container main-content">
+    <h3>Servicio de mensajería cifrada</h3>
 
-      <div>
-        <label for="users"></label>
-        <select name="" id="users">
-          <option value="placeholder">Elige una amiga</option>
-          <option value="user1">María Carrasco</option>
-          <option value="user2">Lorena Hernández</option>
-          <option value="user3">Francisca Salas</option>
-          <option value="user4">Camila López</option>
-        </select>
-      </div>
+    <div>
+      <!--se podría cambiar por el teléfono o correo?-->
+      <h4>Elige una amiga:</h4>
+      <select name="" id="users">
+        <option value="user1">María Carrasco</option>
+        <option value="user2">Lorena Hernández</option>
+        <option value="user3">Francisca Salas</option>
+        <option value="user4">Camila López</option>
+      </select>
+    </div>
 
-      <div>
-        <label for="num-cipher">Elige el desplazamiento de cifrado</label>
-        <input type="number" name="num-cipher" id="num-cipher">
-      </div>
+    <div>
+      <h4>Elige el desplazamiento de cifrado:</h4>
+      <input type="number" name="num-cipher" id="num-cipher">
+    </div>
 
-      <div>
-        <label for="msn-input">Escribe el mensaje que quieres cifrar</label>
-        <textarea name="" id="msn-input" cols="30" rows="10"></textarea>
-      </div>
+    <div>
+      <h4>Escribe tu mensaje:</h4>
+      <textarea name="" id="msn-input" cols="30" rows="10"></textarea>
+    </div>
 
-      <div class="btn-place">
-        <button type="submit" class="btn-type" id="btnEncode">Cifrar el mensaje</button>
-        <button type="submit" class="btn-type" id="btnDecode">Descifrar el mensaje</button>
-      </div>
+    <div class="btn-place">
+      <button class="btn-type" id="btnEncode">Cifrar el mensaje</button>
+      <button class="btn-type" id="btnDecode">Descifrar el mensaje</button>
+    </div>
 
-      <div>
-        <label for="msn-output">Tu mensaje es:</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-      </div>
-    </form>
-  </div>
+    <div>
+      <h4>Tu mensaje es:</h4>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <button class="btn-type" id="btnClear" onclick="clear()">Limpiar el mensaje</button>
+      <button class="btn-type" id="btnLink">Enviar el mensaje</button>
+    </div>
+  </main>
 
   <!--Pie de página con los links a redes sociales-->
   <div class="container background-1">

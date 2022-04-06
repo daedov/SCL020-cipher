@@ -10,9 +10,24 @@ let messageOutput = document.getElementById('msn-output'); //mensaje de salida
 
 // por la funcionalidad de los botones, estos deberían ser constantes o variables?
 const btnEncode = document.getElementById('btnEncode'); //botón cifrar
-const btnDecode = document.getElementById('btnDecode'); //botón descifrar
-const btnClear= document.getElementById('btnClear'); //botón limpiar info - falta crear
-const btnLink = document.getElementById('btnLink'); //botón enviar 
+const btnDecode = document.getElementById('btnDecode'); //botón descrar
+//const btnLink = document.getElementById('btnLink'); botón enviar ... se puede hacer?
+
+btnEncode.addEventListener('click', function(){
+    let msnCipher = cipher.Encode(offsetCipher.value, messageInput.value); 
+    messageOutput.value = msnCipher;  
+});
+
+btnDecode.addEventListener('click', function(){
+    let msnCipher = cipher.Decode(offsetCipher.value, messageInput.value); 
+    messageOutput.value = msnCipher; 
+});
+
+function clear(){
+    document.getElementById('offsetCipher', 'messageInput', 'messageOutput').value = ''; 
+}
+
+
 
 
 
