@@ -5,27 +5,30 @@ import cipher from './cipher.js';
 
 //declaración de variables 
 let offsetCipher = document.getElementById('num-cipher').value; //desplazamiento del cifrado
+console.log(offsetCipher);
 let messageInput = document.getElementById('msn-input').value; //mensaje ingresado
+console.log(messageInput);
 let messageOutput = document.getElementById('msn-output').value; //mensaje de salida
+console.log(messageOutput);
 
-// por la funcionalidad de los botones, estos deberían ser constantes o variables?
 const btnEncode = document.getElementById('btnEncode'); //botón cifrar
 const btnDecode = document.getElementById('btnDecode'); //botón descrar
-//const btnLink = document.getElementById('btnLink'); botón enviar ... se puede hacer?
-//simular envío 
+//const btnLink = document.getElementById('btnLink'); botón enviar ...simular envío 
 
 btnEncode.addEventListener('click', function(){
-    let messageCipher = cipher.Encode(offsetCipher.value, messageInput.value); 
+    let messageCipher = cipher.encode(offsetCipher.value, messageInput.value); 
     messageOutput.value = messageCipher; 
 });
 
 btnDecode.addEventListener('click', function(){
-    let messageCipher = cipher.Decode(offsetCipher.value, messageInput.value); 
+    let messageCipher = cipher.decode(offsetCipher.value, messageInput.value); 
     messageOutput.value = messageCipher; 
 });
 
 /*function clear(){
-    document.getElementById('offsetCipher', 'messageInput', 'messageOutput').value = ''; 
+    document.getElementById('offsetCipher').value = ''; 
+    document.getElementById('messageInput').value = ''; 
+    document.getElementById('messageOutput').value = ''; 
 }*/
 
 
