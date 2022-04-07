@@ -4,12 +4,12 @@
 import cipher from './cipher.js';
 
 //declaración de variables 
-let offsetCipher = document.getElementById('num-cipher').value; //desplazamiento del cifrado
-console.log(offsetCipher);
-let messageInput = document.getElementById('msn-input').value; //mensaje ingresado
-console.log(messageInput);
-let messageOutput = document.getElementById('msn-output').value; //mensaje de salida
-console.log(messageOutput);
+let offsetCipher = document.getElementById('num-cipher'); //desplazamiento del cifrado
+
+let messageInput = document.getElementById('msn-input'); //mensaje ingresado
+
+let messageOutput = document.getElementById('msn-output'); //mensaje de salida
+
 
 const btnEncode = document.getElementById('btnEncode'); //botón cifrar
 const btnDecode = document.getElementById('btnDecode'); //botón descrar
