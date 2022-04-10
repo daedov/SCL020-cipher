@@ -20,8 +20,9 @@
   <!--Caja de ingreso de texto para cifrar y descifrar-->
   <main class="main-content">
 
-    <section class="content-grid">
+    <section>
       <h3>Servicio de mensajería cifrada</h3>
+      <p>Solo tienes que ingresar el mensaje que quieres cifrar o descrifrar y luego puedes enviarlo a cualquiera de tus contactos vía correo o chat</p>
 
       <div>
         <h4>Elige una amiga:</h4>
@@ -31,31 +32,23 @@
           <option value="user3">Francisca Salas</option>
           <option value="user4">Camila López</option>
         </select>
-      </div>
 
-      <div>
         <h4>Elige el desplazamiento de cifrado:</h4>
         <input type="number" id="num-cipher">
       </div>
 
-      <div>
+      <div class="main-content insertText">
         <h4>Escribe tu mensaje:</h4>
         <textarea id="msn-input" cols="30" rows="10"></textarea>
+        <button class="btn-type btn-place" id="btnEncode">Cifrar el mensaje</button>
+        <button class="btn-type btn-place" id="btnDecode">Descifrar el mensaje</button>
       </div>
 
-      <div class="btn-place">
-        <button class="btn-type" id="btnEncode">Cifrar el mensaje</button>
-        <button class="btn-type" id="btnDecode">Descifrar el mensaje</button>
-      </div>
-
-      <div>
+      <div class="main-content insertText">
         <h4>Tu mensaje es:</h4>
         <textarea id="msn-output" cols="30" rows="10"></textarea>
-      </div>
-
-      <div>
-        <button class="btn-type" id="btnClear" onclick="clear()">Limpiar mensaje</button>
-        <button class="btn-type" id="btnLink">Enviar mensaje</button>
+        <button class="btn-type btn-place" id="btnClear">Limpiar mensaje</button>
+        <button class="btn-type btn-place" id="btnLink">Enviar mensaje</button>
       </div>
 
     </section>

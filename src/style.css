@@ -37,12 +37,16 @@ body {
 .main-content {
     padding: 2em 0;
     width: 800px;
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content:center;
     text-align: center;
+}
+
+.insertText {
+    display: inline;
 }
 
 h2 {
