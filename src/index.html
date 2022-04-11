@@ -8,53 +8,59 @@
 </head>
 
 <body>
-  <!--Encabezado de la página-->
+
+<!--Encabezado de la página-->
   <header>
     <div class="wrap">
       <h1>safer</h1>
       <h2>Una plataforma pensada por y para mujeres para cifrar y descifrar mensajes de manera segura y privada</h2>
+      <h3>Escribe todo lo que quieres sin miedo a que otras personas puedan leer tus mensajes, porque... ¡nadie podrá
+        entender lo que dicen!</h3>
       <img src="/images/90539.jpg">
     </div>
   </header>
 
-  <!--Caja de ingreso de texto para cifrar y descifrar-->
+<!--Caja de ingreso de texto para cifrar y descifrar-->
   <main class="main-content">
 
+<!--Explicación funcionamiento del cipher-->
     <section>
-      <h3>Servicio de mensajería cifrada</h3>
-      <p>Solo tienes que ingresar el mensaje que quieres cifrar o descrifrar y luego puedes enviarlo a cualquiera de tus contactos vía correo o chat</p>
+      <h5>¿Cómo funciona?</h5>
+      <h5>Escribe el mensaje que quieres cifrar o descrifrar y luego envíalo a cualquiera de tus
+        contactos</h5>
+    </section>
 
-      <div>
-        <h4>Elige una amiga:</h4>
-        <select name="" id="users">
-          <option value="user1">María Carrasco</option>
-          <option value="user2">Lorena Hernández</option>
-          <option value="user3">Francisca Salas</option>
-          <option value="user4">Camila López</option>
-        </select>
+<!--Elección del destinatario y offset-->
+    <section class="insertText">
+      <h4>Elige una destinataria:</h4>
+      <select name="" id="users">
+        <option value="user1">María Carrasco</option>
+        <option value="user2">Lorena Hernández</option>
+        <option value="user3">Francisca Salas</option>
+        <option value="user4">Camila López</option>
+      </select>
+      <h4>Ingresa el desplazamiento del cifrado:</h4>
+      <input type="number" id="num-cipher" placeholder="Por ejemplo: 1, 2, 3,..">
+    </section>
 
-        <h4>Elige el desplazamiento de cifrado:</h4>
-        <input type="number" id="num-cipher">
-      </div>
+<!--Ingreso del mensaje para cifrar o descifrar-->
+    <section class="insertText">
+      <h4>Ingresa tu mensaje:</h4>
+      <textarea id="msn-input" cols="30" rows="10" placeholder="Escribe todo lo que quieras... es un espacio seguro"></textarea>
+      <button class="btn-type btn-place" id="btnEncode">Cifrar mensaje</button>
+      <button class="btn-type btn-place" id="btnDecode">Descifrar mensaje</button>
+    </section>
 
-      <div class="main-content insertText">
-        <h4>Escribe tu mensaje:</h4>
-        <textarea id="msn-input" cols="30" rows="10"></textarea>
-        <button class="btn-type btn-place" id="btnEncode">Cifrar el mensaje</button>
-        <button class="btn-type btn-place" id="btnDecode">Descifrar el mensaje</button>
-      </div>
-
-      <div class="main-content insertText">
-        <h4>Tu mensaje es:</h4>
-        <textarea id="msn-output" cols="30" rows="10"></textarea>
-        <button class="btn-type btn-place" id="btnClear">Limpiar mensaje</button>
-        <button class="btn-type btn-place" id="btnLink">Enviar mensaje</button>
-      </div>
-
+<!--Devolución del mensaje cifrado o descifrado-->
+    <section class="insertText">
+      <h4>Tu mensaje es:</h4>
+      <textarea id="msn-output" cols="30" rows="10" placeholder="Aquí podrás ver tu mensaje cifrado o descifrado"></textarea>
+      <button class="btn-type btn-place" id="btnClear">Limpiar mensaje</button>
+      <button class="btn-type btn-place" id="btnLink">Enviar mensaje</button>
     </section>
   </main>
 
-  <!--Pie de página con los links a redes sociales-->
+<!--Pie de página con los links a redes sociales-->
   <footer>
     <div class="wrap">
       <img src="/images/facebook.png" alt="" class="logo">
@@ -62,7 +68,6 @@
       <img src="/images/twitter.png" alt="" class="logo">
     </div>
   </footer>
-
   <script src="index.js" type="module"></script>
 </body>
 
