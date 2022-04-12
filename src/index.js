@@ -22,18 +22,18 @@ btnDecode.addEventListener('click', function(){
     messageOutput.value = messageCipher; 
 });
 
-//función para limpiar los campos 
+//función para simular envío del mensaje
+btnLink.addEventListener('click', function() {
+    alert('¡Tu mensaje ha sido enviado!');
+});
+
+/*función para limpiar los campos 
 btnClear.addEventListener('click', function() {
     document.getElementById('offsetCipher').offsetCipher.value = '';
     document.getElementById('messageInput').messageInput.value = '';
     document.getElementById('messageOutput').messageOutput.value = '';
     alert('¡Ingresa un nuevo mensaje!');
-})
-
-//función para simular envío del mensaje
-btnLink.addEventListener('click', function() {
-    alert('¡Tu mensaje ha sido enviado!');
-})
+})*/
 
 
 

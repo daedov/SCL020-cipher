@@ -1,8 +1,8 @@
 # CIPHER
 
-*CIPHER es el primer proyecto desarrollado dentro del Bootcamp de Desarrollo FrontEnd de [Laboratoria](https://postula.laboratoria.la/scl?utm_source=instapage&utm_medium=referral&utm_campaign=main_page)*.
+*CIPHER es el primer proyecto desarrollado dentro del Bootcamp de Desarrollo Web de [Laboratoria](https://postula.laboratoria.la/scl?utm_source=instapage&utm_medium=referral&utm_campaign=main_page)*.
 
-*Este proyecto tiene como objetivo crear una aplicación web que donde el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres*.
+*Este proyecto tiene como objetivo crear una aplicación web donde el usuario pueda cifrar y descifrar un texto a través del desplazamiento de caracteres*.
 
 ***
 
@@ -29,17 +29,30 @@ Por ejemplo, si usamos un desplazamiento de 3 posiciones:
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
-## 2. Descripción del proyecto desarrollado
+## 2. Descripción del proyecto
 
-Su objetivo es ofrecer un espacio seguro para mujeres que sufren situaciones de riesgo o necesitan un filtro adicional para enviar sus mensajes de manera privada. Gracias al cifrado, pueden enviar mensajes sensibles y necesiten codificar mensajes para que estos no puedan ser leídos por otros usuarios.
+* **Nombre de la aplicación**: `SAFER`
 
-* ### Especificaciones de la aplicación
+* **Problema abordado**: los [índices](https://ocac.cl/observatorio-contra-el-acoso-chile-lanza-primera-encuesta-nacional-sobre-acoso-sexual-en-chile/) en temas de acoso o violencia de género no van particularmente a la baja y una de las respuestas ante este tipo de situaciones es el silencio. Muchas veces la mujer afectada no quiere contarle a otros ante la posibilidad que su agresor pueda leer sus mensajes o que otra persona pueda acceder a ellos sin su consentimiento.
 
-  * `Diseño UX-UI` incluye info sobre proceso y decisiones de diseño.
-  * `Usuario` explica claramente quiénes son los usuarios y su relación con
-  el producto.
-  * `Solución` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.
+* **Usuaria objetivo**: mujeres que viven situaciones de riesgo de violencia de género
+
+* **Necesidad de la usuaria**: un filtro adicional en sus mensajes para contar con una mayor privacidad
+
+* **Respuesta al problema**: los servicios de mensajería ya cuentan con variadas opciones de seguridad y privacidad; sin embargo, en situaciones de riesgo, se requiere mayor protección. En este sentido, poder codificar el mensaje antes de enviarlo, permite agregar un filtro extra de seguridad si alguien del entorno de la persona afectada intenta acceder a sus mensajes.
+
+* **Relación de las usuarias con el producto desarrollado**: gracias al cifrado, se pueden enviar mensajes sensibles y que no puedan ser leídos por otras personas de su entorno. 
+
+### Proceso de definición del producto
+
+En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
+para definir el producto final a nivel de experiencia y de interfaz.
+
+* Quiénes son los principales usuarios de producto.
+* Cuáles son los objetivos de estos usuarios en relación con tu producto.
+* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+
+* `Diseño UX - Experiencia de usuaria` incluye info sobre proceso y decisiones de diseño.
 
 * `Diseño UI - Interfaz de usuaria`
 
@@ -49,12 +62,25 @@ Su objetivo es ofrecer un espacio seguro para mujeres que sufren situaciones de 
   * Interfaz permite escribir un texto para ser descifrado.
   * Interfaz muestra el resultado del descifrado correctamente.
 
+  La interfaz de la usuaria permite:
+
+* Seleccionar una destinataria del mensaje
+* Elegir un número de desplazamiento indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
+* Insertar un mensaje (texto) que queremos cifrar.
+* Ver el resultado del mensaje cifrado.
+* Insertar un mensaje (texto) a descifrar.
+* Ver el resultado del mensaje descifrado.
+
 * ### Tecnologías utilizadas
 
   * HTML
   * CSS
   * Vanilla Javascript
   * Node.js
+
+* cómo descargar, instalar y ejecutar la aplicación
+  así como una introducción a la aplicación, su funcionalidad y decisiones de
+  diseño que tomaron.
 
 ## 3. Objetivos de aprendizaje
 
@@ -70,9 +96,9 @@ Su objetivo es ofrecer un espacio seguro para mujeres que sufren situaciones de 
 
 * Modelo de caja (box model): borde, margen, padding
 
-* Uso de selectores del DOM
-
 #### WEB
+
+* Uso de selectores del DOM
 
 * Manejo de eventos del DOM (listeners, propagación, delegación)
 
@@ -115,49 +141,3 @@ Su objetivo es ofrecer un espacio seguro para mujeres que sufren situaciones de 
 ### Product-design
 
 * Seguir los principios básicos de diseño visual
-
-### Definición del producto
-
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
-
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-### Interfaz de usuario (UI)
-
-La interfaz de la usuaria permite:
-
-* Seleccionar una destinataria del mensaje
-* Elegir un número de desplazamiento indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
-* Insertar un mensaje (texto) que queremos cifrar.
-* Ver el resultado del mensaje cifrado.
-* Insertar un mensaje (texto) a descifrar.
-* Ver el resultado del mensaje descifrado.
-
-### Dudas
-
-* cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-
-## 7. Consideraciones técnicas
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```

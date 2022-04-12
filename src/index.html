@@ -12,10 +12,8 @@
 <!--Encabezado de la página-->
   <header>
     <div class="wrap">
-      <h1>safer</h1>
-      <h2>Una plataforma pensada por y para mujeres para cifrar y descifrar mensajes de manera segura y privada</h2>
-      <h3>Escribe todo lo que quieres sin miedo a que otras personas puedan leer tus mensajes, porque... ¡nadie podrá
-        entender lo que dicen!</h3>
+      <h1>safer chat</h1>
+      <h2>Ya puedes codificar tus mensajes de manera segura y privada<br><span class="subtitle">Escribe todo lo que quieras, porque... ¡nadie más podrá entender lo que dicen!</span></h2>
       <img src="/images/90539.jpg">
     </div>
   </header>
@@ -25,27 +23,34 @@
 
 <!--Explicación funcionamiento del cipher-->
     <section>
-      <h5>¿Cómo funciona?</h5>
-      <h5>Escribe el mensaje que quieres cifrar o descrifrar y luego envíalo a cualquiera de tus
-        contactos</h5>
+      <h4 class="titleMain">¿Cómo funciona?</h4>
+      <p class="textMain">Escribe el mensaje que quieres cifrar o descrifrar y luego envíalo a cualquiera de tus
+        contactos</p>
     </section>
 
 <!--Elección del destinatario y offset-->
     <section class="insertText">
-      <h4>Elige una destinataria:</h4>
-      <select name="" id="users">
-        <option value="user1">María Carrasco</option>
-        <option value="user2">Lorena Hernández</option>
-        <option value="user3">Francisca Salas</option>
-        <option value="user4">Camila López</option>
+      <h5>Elige aplicación de mensajería:</h5>
+      <select name="" id="chat-email">
+        <option value="1">Facebook</option>
+        <option value="2">Instagram</option>
+        <option value="3">Whatsapp</option>
+        <option value="4">Gmail</option>
       </select>
-      <h4>Ingresa el desplazamiento del cifrado:</h4>
+      <h5>Elige destinataria:</h5>
+      <select name="" id="user">
+        <option value="1">María Carrasco</option>
+        <option value="2">Lorena Pérez</option>
+        <option value="3">Javiera Rodríguez</option>
+        <option value="4">Valentina Cáceres</option>
+      </select>
+      <h5>Ingresa desplazamiento de cifrado:</h5>
       <input type="number" id="num-cipher" placeholder="Por ejemplo: 1, 2, 3,..">
     </section>
 
 <!--Ingreso del mensaje para cifrar o descifrar-->
     <section class="insertText">
-      <h4>Ingresa tu mensaje:</h4>
+      <h5>Ingresa tu mensaje:</h5>
       <textarea id="msn-input" cols="30" rows="10" placeholder="Escribe todo lo que quieras... es un espacio seguro"></textarea>
       <button class="btn-type btn-place" id="btnEncode">Cifrar mensaje</button>
       <button class="btn-type btn-place" id="btnDecode">Descifrar mensaje</button>
@@ -53,9 +58,8 @@
 
 <!--Devolución del mensaje cifrado o descifrado-->
     <section class="insertText">
-      <h4>Tu mensaje es:</h4>
+      <h5>Tu mensaje es:</h5>
       <textarea id="msn-output" cols="30" rows="10" placeholder="Aquí podrás ver tu mensaje cifrado o descifrado"></textarea>
-      <button class="btn-type btn-place" id="btnClear">Limpiar mensaje</button>
       <button class="btn-type btn-place" id="btnLink">Enviar mensaje</button>
     </section>
   </main>
