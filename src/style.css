@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /*Estilos globales*/
 body {
@@ -44,13 +45,12 @@ h2 {
     border-radius: 10px; 
     font-family: 'Square Peg', cursive;
     font-size: 3em;
-}
-
-h3 {
-    font-weight: 400; 
-    font-size: 1.2em;
-    background-color:rgba(107, 104, 107, 0.2);
-    border-radius: 10px; 
+    margin: 1.5em;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*Estilos main*/
@@ -72,26 +72,16 @@ h3 {
 }
 
 /*Estilos de títulos y texto*/
-h2 {
-    margin: 1.5em;
-    position: relative;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 h4 {
-    padding: .5em auto;
+    padding: .8em;
     margin-right: 1.5em; 
 }
 
 h5 {
-    background-color:rgba(230, 201, 236, 0.5);
     border-radius: 10px;
     font-size: .9em;
-    margin-top: .5em;
-    padding: .4em;
+    margin-top: .1em;
+    padding: .2em;
     width: 9em;
     height: 6em;
     display: flex;
@@ -128,10 +118,12 @@ select {
 .textMain {
     background-color:rgba(230, 201, 236, 0.5); 
     align-items: center;
-    justify-content: center;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 2em;
+    font-size: 1em;
+    justify-content: center;
+
 }
 
 #chat-email, #user  {
@@ -160,8 +152,6 @@ select {
     height: 15em;
 }
 
-
-
 /*Estilos de botones*/
 
 .btn-type {
@@ -170,29 +160,22 @@ select {
     border-radius: 1em;
     font-size: .9em;
     margin-top: 5.5em;
-    margin-left: 1.7em;
-    padding: .3em;
-    height: 5em;
-    width: 10em;
+    margin-left: 1.5em;
+    padding: .2em;
+    height: 4em;
+    width: 9.3em;
     text-align:center;
 }
 
 /*Estilos footer*/
 footer .wrap {
+    width: 99%;
+    padding: .2em;
+    justify-content: center;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-    background-color: rgb(255, 235, 205);
-}
-
-img .logo {
-    width: 25px;
-    height: 25px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    background-color: rgba(159, 94, 177, 0.6);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
 }
 
 

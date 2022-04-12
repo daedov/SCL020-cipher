@@ -7,7 +7,6 @@ let messageOutput = document.getElementById('msn-output'); //mensaje de salida
 
 const btnEncode = document.getElementById('btnEncode'); //botón para cifrar
 const btnDecode = document.getElementById('btnDecode'); //botón para descifrar
-const btnClear = document.getElementById('btnClear'); //botón limpiar mensaje
 const btnLink = document.getElementById('btnLink'); //botón enviar mensaje - simula envío 
 
 //invocar cipher.encode

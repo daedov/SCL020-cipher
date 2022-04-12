@@ -35,56 +35,38 @@ Por ejemplo, si usamos un desplazamiento de 3 posiciones:
 
 * **Problema abordado**: los [índices](https://ocac.cl/observatorio-contra-el-acoso-chile-lanza-primera-encuesta-nacional-sobre-acoso-sexual-en-chile/) en temas de acoso o violencia de género no van particularmente a la baja y una de las respuestas ante este tipo de situaciones es el silencio. Muchas veces la mujer afectada no quiere contarle a otros ante la posibilidad que su agresor pueda leer sus mensajes o que otra persona pueda acceder a ellos sin su consentimiento.
 
-* **Usuaria objetivo**: mujeres que viven situaciones de riesgo de violencia de género
+* **Usuaria objetivo**: mujeres que viven situaciones de riesgo de violencia de género.
 
-* **Necesidad de la usuaria**: un filtro adicional en sus mensajes para contar con una mayor privacidad
+* **Necesidad de la usuaria**: un filtro adicional en sus mensajes para contar con una mayor privacidad.
 
-* **Respuesta al problema**: los servicios de mensajería ya cuentan con variadas opciones de seguridad y privacidad; sin embargo, en situaciones de riesgo, se requiere mayor protección. En este sentido, poder codificar el mensaje antes de enviarlo, permite agregar un filtro extra de seguridad si alguien del entorno de la persona afectada intenta acceder a sus mensajes.
+* **Respuesta al problema**: los servicios de mensajería ya cuentan con variadas opciones de seguridad y privacidad; sin embargo, en situaciones de riesgo, se requiere mayor protección. En este sentido, poder codificar el mensaje antes de enviarlo, permite agregar un filtro extra de seguridad si alguien del entorno de la persona afectada intenta acceder a los mensajes.
 
-* **Relación de las usuarias con el producto desarrollado**: gracias al cifrado, se pueden enviar mensajes sensibles y que no puedan ser leídos por otras personas de su entorno. 
+* **Relación de las usuarias con el producto desarrollado**: gracias al cifrado, se pueden enviar mensajes que no puedan ser leídos facilmente por otras personas del entorno de la usuaria.
 
-### Proceso de definición del producto
+* **La Interfaz de Usuaria permite:**
 
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
+  * Seleccionar una aplicación de mensajería
+  * Seleccionar una destinataria del mensaje
+  * Ingresar el desplazamiento a usar en el cifrado o descifrado
+  * Ingresar un texto para ser cifrado
+  * Ingresar un texto para ser descifrado
+  * Muestra el resultado del cifrado o descifrado
+  * Enviar el mensaje codificado
 
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-* `Diseño UX - Experiencia de usuaria` incluye info sobre proceso y decisiones de diseño.
-
-* `Diseño UI - Interfaz de usuaria`
-
-  * La interfaz permite elegir el desplazamiento a usar en el
-  cifrado/descifrado.
-  * Interfaz permite escribir un texto para ser cifrado.
-  * Interfaz permite escribir un texto para ser descifrado.
-  * Interfaz muestra el resultado del descifrado correctamente.
-
-  La interfaz de la usuaria permite:
-
-* Seleccionar una destinataria del mensaje
-* Elegir un número de desplazamiento indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
-* Insertar un mensaje (texto) que queremos cifrar.
-* Ver el resultado del mensaje cifrado.
-* Insertar un mensaje (texto) a descifrar.
-* Ver el resultado del mensaje descifrado.
-
-* ### Tecnologías utilizadas
+* **Tecnologías utilizadas:**
 
   * HTML
   * CSS
   * Vanilla Javascript
   * Node.js
 
-* cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
+* **Funcionalidad de la aplicación**
+
+  * cómo descargar, instalar y ejecutar la aplicación
 
 ## 3. Objetivos de aprendizaje
 
-### Objetivos logrados
+#### Objetivos logrados
 
 #### HTML
 
@@ -96,7 +78,7 @@ para definir el producto final a nivel de experiencia y de interfaz.
 
 * Modelo de caja (box model): borde, margen, padding
 
-#### WEB
+#### Web APIs
 
 * Uso de selectores del DOM
 
