@@ -8,11 +8,9 @@
 
 ## Índice
 
-* [1. ¿Qué es el cifrado CIPHER?](#1-¿-qué-es-el-cifrado-cipher-?)
-* [2. Consideraciones generales](#2-consideraciones-generales)
-* [3. Resumen del proyecto](#3-resumen-del-proyecto)
-* [4. Consideraciones técnicas](#4-consideraciones-técnicas)
-* [5. Objetivos de aprendizaje ogrados](#5-objetivos-de-aprendizaje-logrados)
+* [1. ¿Qué es el cifrado CIPHER?](#1-qué-es-el-cifrado-cipher)
+* [2. Descripción del proyecto](#2-descripción-del-proyecto)
+* [3. Objetivos de aprendizaje alcanzados](#3-objetivos-de-aprendizaje-alcanzados)
 
 ***
 
@@ -31,7 +29,7 @@ Por ejemplo, si usamos un desplazamiento de 3 posiciones:
 
 ## 2. Descripción del proyecto
 
-* **Nombre de la aplicación**: `SAFER`
+* **Nombre de la aplicación**: **`SAFER`**
 
 * **Problema abordado**: los [índices](https://ocac.cl/observatorio-contra-el-acoso-chile-lanza-primera-encuesta-nacional-sobre-acoso-sexual-en-chile/) en temas de acoso o violencia de género no van particularmente a la baja y una de las respuestas ante este tipo de situaciones es el silencio. Muchas veces la mujer afectada no quiere contarle a otros ante la posibilidad que su agresor pueda leer sus mensajes o que otra persona pueda acceder a ellos sin su consentimiento.
 
@@ -43,7 +41,7 @@ Por ejemplo, si usamos un desplazamiento de 3 posiciones:
 
 * **Relación de las usuarias con el producto desarrollado**: gracias al cifrado, se pueden enviar mensajes que no puedan ser leídos facilmente por otras personas del entorno de la usuaria.
 
-* **La Interfaz de Usuaria permite:**
+* **La interfaz de usuaria permite:**
 
   * Seleccionar una aplicación de mensajería
   * Seleccionar una destinataria del mensaje
@@ -62,64 +60,62 @@ Por ejemplo, si usamos un desplazamiento de 3 posiciones:
 
 * **Funcionalidad de la aplicación**
 
-  * cómo descargar, instalar y ejecutar la aplicación
+  * cómo descargar, instalar y ejecutar la aplicación?
 
-## 3. Objetivos de aprendizaje
+## 3. Objetivos de aprendizaje alcanzados
 
-#### Objetivos logrados
+* HTML
 
-#### HTML
+  * Uso de HTML semántico
 
-* Uso de HTML semántico
+* CSS
 
-#### CSS
+  * Uso de selectores de CSS
 
-* Uso de selectores de CSS
+  * Modelo de caja (box model): borde, margen, padding
 
-* Modelo de caja (box model): borde, margen, padding
+* Web APIs
 
-#### Web APIs
+  * Uso de selectores del DOM
 
-* Uso de selectores del DOM
+  * Manejo de eventos del DOM (listeners, propagación, delegación)
 
-* Manejo de eventos del DOM (listeners, propagación, delegación)
+  * Manipulación dinámica del DOM
 
-* Manipulación dinámica del DOM
+* Javascript
 
-#### Javascript
+  * Tipos de datos primitivos
 
-* Tipos de datos primitivos
+  * Strings (cadenas de caracteres)
 
-* Strings (cadenas de caracteres)
+  * Variables (declaración, asignación, ámbito)
 
-* Variables (declaración, asignación, ámbito)
+  * Uso de condicionales (if-else, switch, operador ternario, lógica booleana)
 
-* Uso de condicionales (if-else, switch, operador ternario, lógica booleana)
+  * Uso de bucles/ciclos (while, for, for..of)
 
-* Uso de bucles/ciclos (while, for, for..of)
+  * Funciones (params, args, return)
 
-* Funciones (params, args, return)
+  * Pruebas unitarias (unit tests)
 
-* Pruebas unitarias (unit tests)
+  * Módulos de ECMAScript (ES Modules)
 
-* Módulos de ECMAScript (ES Modules)
+  * Uso de linter (ESLINT)
 
-* Uso de linter (ESLINT)
+  * Uso de identificadores descriptivos (Nomenclatura y Semántica)
 
-* Uso de identificadores descriptivos (Nomenclatura y Semántica)
+* Control de Versiones Git y GitHub
 
-### Control de Versiones Git y GitHub
+  * Git: Instalación y configuración
 
-* Git: Instalación y configuración
+  * Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)
 
-* Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)
+  * GitHub: Creación de cuenta y repos
 
-* GitHub: Creación de cuenta y repos
+* User-centricity
 
-### User-centricity
+  * Diseñar un producto o servicio poniendo a la usuaria en el centro
 
-* Diseñar un producto o servicio poniendo a la usuaria en el centro
+* Product-design
 
-### Product-design
-
-* Seguir los principios básicos de diseño visual
+  * Seguir los principios básicos de diseño visual
