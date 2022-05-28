@@ -8,6 +8,7 @@ let messageOutput = document.getElementById('msn-output'); //mensaje de salida
 const btnEncode = document.getElementById('btnEncode'); //botón para cifrar
 const btnDecode = document.getElementById('btnDecode'); //botón para descifrar
 const btnLink = document.getElementById('btnLink'); //botón enviar mensaje - simula envío 
+const btnClear = document.getElementById('btnClear'); // botón para limpiar campos
 
 //invocar cipher.encode
 btnEncode.addEventListener('click', function(){
@@ -19,6 +20,14 @@ btnEncode.addEventListener('click', function(){
 btnDecode.addEventListener('click', function(){
     let messageCipher = cipher.decode(offsetCipher.value, messageInput.value); 
     messageOutput.value = messageCipher; 
+});
+
+// función para limpiar campos
+btnClear.addEventListener('click', function(){
+    offsetCipher.value = " ";
+    messageInput.value = " "; 
+    messageOutput.value = " ";
+    return
 });
 
 //función para simular envío del mensaje
