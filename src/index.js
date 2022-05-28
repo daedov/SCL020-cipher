@@ -26,13 +26,7 @@ btnLink.addEventListener('click', function() {
     alert('¡Tu mensaje ha sido enviado!');
 });
 
-/*función para limpiar los campos 
-btnClear.addEventListener('click', function() {
-    document.getElementById('offsetCipher').offsetCipher.value = '';
-    document.getElementById('messageInput').messageInput.value = '';
-    document.getElementById('messageOutput').messageOutput.value = '';
-    alert('¡Ingresa un nuevo mensaje!');
-})*/
+
 
 
 
