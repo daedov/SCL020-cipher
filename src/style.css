@@ -20,7 +20,8 @@ body {
 }
 
 .wrap h1 {
-    background-color:rgba(107, 104, 107, 0.2);position: relative;
+    background-color:rgba(107, 104, 107, 0.2);
+    position: relative;
     z-index: 1;
     padding: 100px;
     font-family: 'Bungee Shade', cursive;
@@ -56,13 +57,14 @@ h2 {
 /*Estilos main*/
 .main-content {
     padding: 2em 0;
-    width: 850px;
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content:center;
     text-align: center;
+    align-items:center;
+    background-color: rgba(161, 159, 161, 0.2);
 }
 
 .insertText {
@@ -89,15 +91,7 @@ h5 {
     align-items: center;
 }
 
-textarea {
-    margin: 2em;
-}
-
-input {
-    margin: 2em;
-}
-
-select {
+textarea, input, select {
     margin: 2em;
 }
 
@@ -107,23 +101,20 @@ select {
     font-weight: 300;
 };
 
-.titleMain {
-    font-size: 1.2em;
-    align-items: center;
+.textContent {
     justify-content: center;
+    align-items: center;
     text-align: center;
-    border-radius: 10px;
 }
 
 .textMain {
     background-color:rgba(230, 201, 236, 0.5); 
+    justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 2em;
     font-size: 1em;
-    justify-content: center;
-
 }
 
 #chat-email, #user  {
@@ -157,6 +148,7 @@ select {
 .btn-type {
     position: relative;
     background-color: rgb(249, 75, 75);
+    border-color: rgb(172, 13, 13);
     border-radius: 1em;
     font-size: .9em;
     margin-top: 5.5em;
@@ -173,7 +165,8 @@ footer .wrap {
     padding: .2em;
     justify-content: center;
     text-align: center;
-    background-color: rgba(159, 94, 177, 0.6);
+    align-items:center;
+    background-color: rgba(159, 94, 177, 0.3);
     font-family: 'Dancing Script', cursive;
     font-size: 1.2em;
 }
