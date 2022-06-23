@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*Estilos globales*/
+body {
+    box-sizing: border-box;
+    background-color: rgb(224, 154, 222);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/*Estilos header*/
+.wrap {
+    position: relative;
+    overflow: hidden;
+    padding: 8px;
+    border: 1px dashed rgb(223, 142, 21);
+}
+
+.wrap h1 {
+    background-color:rgba(107, 104, 107, 0.2);
+    position: relative;
+    z-index: 1;
+    padding: 100px;
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 7em;
+    border-radius: 10px; 
+}
+
+.wrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+h2 {
+    background-color:rgba(107, 104, 107, 0.2);
+    border-radius: 10px; 
+    font-family: 'Square Peg', cursive;
+    font-size: 3em;
+    margin: 1.5em;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Estilos main*/
+.main-content {
+    padding: 2em 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    align-items:center;
+    background-color: rgba(161, 159, 161, 0.2);
+}
+
+.insertText {
+    display: flex;
+    flex-direction: row;
+    margin: 0.3em .9em;
+}
+
+/*Estilos de títulos y texto*/
+h4 {
+    padding: .8em;
+    margin-right: 1.5em; 
+}
+
+h5 {
+    border-radius: 10px;
+    font-size: .9em;
+    margin-top: .1em;
+    padding: .2em;
+    width: 9em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea, input, select {
+    margin: 2em;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: .5em;
+    font-weight: 300;
+};
+
+.textContent {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textMain {
+    background-color:rgba(230, 201, 236, 0.5); 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    font-size: 1em;
+}
+
+#chat-email, #user  {
+    font-size: .8em;
+    height: 2.5em;
+    width: 12em;
+    border-radius: 10px;
+    padding: .5em;
+    justify-items: center;
+    align-items: center;
+}
+
+#num-cipher {
+    font-size: .8em;
+    height: 2.5em;
+    width: 5em;
+    border-radius: 10px;
+    padding: .5em auto;
+    justify-items: center;
+    align-items: center;
+}
+
+#msn-input #msn-output {
+    font-size: .8em;
+    width: 20em;
+    height: 15em;
+}
+
+/*Estilos de botones*/
+
+.btn-type {
+    position: relative;
+    background-color: rgb(249, 75, 75);
+    border-color: rgb(172, 13, 13);
+    border-radius: 1em;
+    font-size: .9em;
+    margin-top: 5.5em;
+    margin-left: 1.5em;
+    padding: .2em;
+    height: 4em;
+    width: 9.3em;
+    text-align:center;
+}
+
+/*Estilos footer*/
+footer .wrap {
+    width: 99%;
+    padding: .2em;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    background-color: rgba(159, 94, 177, 0.3);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+}
+
+
+
+

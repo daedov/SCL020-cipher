@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Safer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!--Encabezado de la página-->
+  <header>
+    <div class="wrap">
+      <h1>safer chat</h1>
+      <h2>Ya puedes codificar tus mensajes de manera segura y privada<br><span class="subtitle">Escribe todo lo que quieras, porque... ¡nadie más podrá entender lo que escribes!</span></h2>
+      <img src="/images/90539.jpg">
+    </div>
+  </header>
+
+<!--Caja de ingreso de texto para cifrar y descifrar-->
+  <main class="main-content">
+
+<!--Explicación funcionamiento del cipher-->
+    <section class="textContent">
+      <h4 class="textMain">Escribe el mensaje que quieres cifrar o descrifrar y luego envíalo a tus
+        contactos</h4>
+    </section>
+
+<!--Elección del destinatario y offset-->
+    <section class="insertText">
+      <h5>Selecciona app de mensajería:</h5>
+      <select name="" id="chat-email">
+        <option value="1">Facebook</option>
+        <option value="2">Instagram</option>
+        <option value="3">Whatsapp</option>
+        <option value="4">Gmail</option>
+      </select>
+      <h5>Selecciona destinataria:</h5>
+      <select name="" id="user">
+        <option value="1">María Carrasco</option>
+        <option value="2">Lorena Pérez</option>
+        <option value="3">Javiera Rodríguez</option>
+        <option value="4">Valentina Cáceres</option>
+      </select>
+      <h5>Ingresa desplazamiento de cifrado:</h5>
+      <input type="number" id="num-cipher" placeholder="1, 2,..">
+    </section>
+<!--Ingreso del mensaje para cifrar o descifrar-->
+    <section class="insertText">
+      <h5>Ingresa tu mensaje:</h5>
+      <textarea id="msn-input" cols="30" rows="10" placeholder="Escribe todo lo que quieras... es un espacio seguro"></textarea>
+      <button class="btn-type btn-place" id="btnEncode">Cifrar mensaje</button>
+      <button class="btn-type btn-place" id="btnDecode">Descifrar mensaje</button>
+    </section>
+
+<!--Devolución del mensaje cifrado o descifrado-->
+    <section class="insertText">
+      <h5>Tu mensaje es:</h5>
+      <textarea id="msn-output" cols="30" rows="10" placeholder="Aquí podrás ver tu mensaje cifrado o descifrado"></textarea>
+      <button class="btn-type btn-place" id="btnClear">Limpiar mensaje</button>
+      <button class="btn-type btn-place" id="btnLink">Enviar mensaje</button>
+    </section>
+  </main>
+
+<!--Pie de página-->
+  <footer>
+    <div class="wrap">
+      <p>---Hecho con ❤ por daedov---</p>
+    </div>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
